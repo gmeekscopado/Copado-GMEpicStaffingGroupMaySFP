@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <applicationVisibilities>
         <application>Express_Setup</application>
         <default>false</default>
@@ -11897,6 +11898,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Party__c.Budget__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Problem.Category</field>
         <readable>true</readable>
@@ -19528,6 +19534,9 @@
         <layout>OrderItem-Formato de productos de pedido</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Party__c-Party Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Pricebook2-Price Book Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -19644,6 +19653,7 @@
     <layoutAssignments>
         <layout>copadovsm__Value_Stream_Map_Snapshot__c-copadovsm__Value Stream Map Snapshot Layout</layout>
     </layoutAssignments>
+    <loginHours n1:nil="true" />
     <loginIpRanges>
         <description>All</description>
         <endAddress>255.255.255.255</endAddress>
@@ -20043,6 +20053,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>PartyConsent</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Party__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
